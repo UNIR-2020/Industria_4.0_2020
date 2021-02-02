@@ -1,0 +1,9 @@
+inputs_corriente=inputs_corriente';
+tar_corriente=tar_corriente';
+y=tar_corriente;
+y_est=net_corriente(inputs_corriente');
+plot(y,'b','linewidth',4);
+hold on;
+grid on;
+plot(y_est,'r','linewidth',2)
+legend('ORIGINAL','RED NEURONAL')
